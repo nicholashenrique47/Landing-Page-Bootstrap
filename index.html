@@ -1,50 +1,145 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
+<head>
+  <!-- 
+    Define a codificação de caracteres da página.
+    O UTF-8 permite o uso correto de acentos, cedilha e caracteres especiais.
+  -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 
+    Define o título exibido na aba do navegador.
+  -->
+  <title>Panorama do Mercado Tech</title>
+  <!-- 
+    Descrição da página.
+    Pode ser usada por buscadores e também ajuda a documentar o objetivo da página.
+  -->
+  <meta 
+    name="description" 
+    content="Landing page acadêmica com análise de vagas locais e nacionais da área de tecnologia, destacando cargos, tecnologias, competências e tendências do mercado."
+  >
+  <!-- 
+    Palavras-chave relacionadas ao conteúdo da página.
+    Hoje têm pouco peso para buscadores, mas ajudam didaticamente a entender metadados.
+  -->
+  <meta 
+    name="keywords" 
+    content="tecnologia, mercado de trabalho, vagas de tecnologia, desenvolvimento web, HTML, CSS, Bootstrap, Java, Spring Boot"
+  >
+  <!-- 
+    Define o autor da página.
+    O aluno deve substituir pelo próprio nome.
+  -->
+  <meta name="author" content="Nome do acadêmico">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Nicholas">
-    <meta name="description" content ="Landing Page academica com análise de vagas locais e nacionais da área de tecnologia">
-    <meta name ="keywords" content="tecnologia, mercado, vagas de tecnologia, trabalho, desenvolvimento web">
-    <meta name ="theme-color" content="#198754">
-    <title>Panorama do Mercado Tech</title>
-    <!-- Chamada do BootStrap -->
+  <!-- 
+    Define a cor da interface do navegador em alguns dispositivos móveis.
+  -->
+  <meta name="theme-color" content="#198754">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon_io/apple-touch-icon.png">
+  <!-- 
+    FAVICON / ÍCONE DA ABA DO NAVEGADOR
+    Os arquivos estão dentro de assets/icons/favicon_io.
+    Os caminhos são relativos ao arquivo index.html.
+  -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="assets/icons/favicon_io/site.webmanifest">
 
-<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon_io/favicon-32x32.png">
-
-<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon_io/favicon-16x16.png">
-
-<link rel="manifest" href="assets/icons/favicon_io/site.webmanifest">
-<link rel="stylesheet" href="/css/style.css">
+  <!-- 
+    Open Graph.
+    Metadados usados quando o link da página é compartilhado em redes sociais,
+    aplicativos de mensagem ou plataformas que geram pré-visualização do link.
+  -->
+  <meta property="og:title" content="Panorama do Mercado Tech">
+  <meta 
+    property="og:description" 
+    content="Análise acadêmica de vagas locais e nacionais da área de tecnologia."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <!-- 
+    Bootstrap CSS.
+    Biblioteca usada para facilitar grid, espaçamentos, cards, navbar, botões e responsividade.
+  -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous"
+  >
+  <!-- 
+    CSS próprio do projeto.
+    Deve ser carregado depois do Bootstrap para permitir personalizações.
+  -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
   <body>
-<nav class="navbar navbar-expand-lg bg-white border-bottom fixed-top">
-
+<!-- 
+  HEADER / CABEÇALHO
+  Contém a logo do projeto e o menu de navegação.
+  O menu utiliza classes do Bootstrap para responsividade.
+-->
+<header>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom fixed-top">
     <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#inicio">
+        <img 
+          src="assets/images/logo.png" 
+          alt="Logo do projeto Panorama do Mercado Tech" 
+          class="logo"
+        >
+      </a>
 
-    <a class="navbar-brand d-flex align-items-center" href="#inicio">
-        <img src="assets/images/logo.png" alt="Logo do projeto Panorama do Mercado tech" class="logo">
-    </a>
-    <button
+      <!-- 
+        Botão exibido em telas menores.
+        Ele abre e fecha o menu no modo mobile.
+      -->
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#menuPrincipal" 
+        aria-controls="menuPrincipal" 
+        aria-expanded="false" 
+        aria-label="Abrir menu de navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-     class="navbar-toogler" 
-     type="button" 
-     data-bs-toogle="colapse" 
-     data-bs-target="#menuPrincipal" 
-     arial-controls="menuPrincipal"
-     arial-expanded="false"
-     arial-label="Abrir Menu de Navegação">
-     <span class="navbar-toogler-icon"></span>
-    </button>
+<div class="collapse navbar-collapse" id="menuPrincipal">
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a href="#inicio" class="nav-link">Início</a>
+        </li>
 
+        <li class="nav-item">
+            <a href="#pesquisa" class="nav-link">Pesquisa</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#vagas" class="nav-link">Vagas</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#Tecnologias" class="nav-link">Tecnologias</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#competencias" class="nav-link">Competências</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#analise" class="nav-link">Análise</a>
+        </li>
+
+    </ul>
 
     </div>
 </nav>
+</header>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   
 </body>

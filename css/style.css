@@ -1,5 +1,18 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
-    text-align: center;
-    justify-content: center;
-    margin-top: 50%;
+    padding-top: 72px;
+}
+.section-padding{
+    padding: 72px 0;
+}
+.logo{
+    width: 140px;
+    height: auto;
+}
+.hero-section{
+min-height: 520px;
+display: flex;
+align-items: center;
 }
