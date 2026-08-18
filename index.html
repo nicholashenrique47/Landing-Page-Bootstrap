@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
   <!-- 
     Define a codificação de caracteres da página.
@@ -15,18 +16,14 @@
     Descrição da página.
     Pode ser usada por buscadores e também ajuda a documentar o objetivo da página.
   -->
-  <meta 
-    name="description" 
-    content="Landing page acadêmica com análise de vagas locais e nacionais da área de tecnologia, destacando cargos, tecnologias, competências e tendências do mercado."
-  >
+  <meta name="description"
+    content="Landing page acadêmica com análise de vagas locais e nacionais da área de tecnologia, destacando cargos, tecnologias, competências e tendências do mercado.">
   <!-- 
     Palavras-chave relacionadas ao conteúdo da página.
     Hoje têm pouco peso para buscadores, mas ajudam didaticamente a entender metadados.
   -->
-  <meta 
-    name="keywords" 
-    content="tecnologia, mercado de trabalho, vagas de tecnologia, desenvolvimento web, HTML, CSS, Bootstrap, Java, Spring Boot"
-  >
+  <meta name="keywords"
+    content="tecnologia, mercado de trabalho, vagas de tecnologia, desenvolvimento web, HTML, CSS, Bootstrap, Java, Spring Boot">
   <!-- 
     Define o autor da página.
     O aluno deve substituir pelo próprio nome.
@@ -54,22 +51,15 @@
     aplicativos de mensagem ou plataformas que geram pré-visualização do link.
   -->
   <meta property="og:title" content="Panorama do Mercado Tech">
-  <meta 
-    property="og:description" 
-    content="Análise acadêmica de vagas locais e nacionais da área de tecnologia."
-  >
+  <meta property="og:description" content="Análise acadêmica de vagas locais e nacionais da área de tecnologia.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <!-- 
     Bootstrap CSS.
     Biblioteca usada para facilitar grid, espaçamentos, cards, navbar, botões e responsividade.
   -->
-  <link 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-    rel="stylesheet" 
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
-    crossorigin="anonymous"
-  >
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <!-- 
     CSS próprio do projeto.
     Deve ser carregado depois do Bootstrap para permitir personalizações.
@@ -77,70 +67,275 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-  <body>
-<!-- 
+<body>
+  <!-- 
   HEADER / CABEÇALHO
   Contém a logo do projeto e o menu de navegação.
   O menu utiliza classes do Bootstrap para responsividade.
 -->
-<header>
-  <nav class="navbar navbar-expand-lg bg-white border-bottom fixed-top">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#inicio">
-        <img 
-          src="assets/images/logo.png" 
-          alt="Logo do projeto Panorama do Mercado Tech" 
-          class="logo"
-        >
-      </a>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#inicio">
+          <img src="assets/images/logo.png" alt="Logo do projeto Panorama do Mercado Tech" class="logo">
+        </a>
 
-      <!-- 
+        <!-- 
         Botão exibido em telas menores.
         Ele abre e fecha o menu no modo mobile.
       -->
-      <button 
-        class="navbar-toggler" 
-        type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#menuPrincipal" 
-        aria-controls="menuPrincipal" 
-        aria-expanded="false" 
-        aria-label="Abrir menu de navegação">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu de navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<div class="collapse navbar-collapse" id="menuPrincipal">
-    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-            <a href="#inicio" class="nav-link">Início</a>
-        </li>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="#inicio" class="nav-link">Início</a>
+            </li>
 
-        <li class="nav-item">
-            <a href="#pesquisa" class="nav-link">Pesquisa</a>
-        </li>
+            <li class="nav-item">
+              <a href="#pesquisa" class="nav-link">Pesquisa</a>
+            </li>
 
-        <li class="nav-item">
-            <a href="#vagas" class="nav-link">Vagas</a>
-        </li>
+            <li class="nav-item">
+              <a href="#vagas" class="nav-link">Vagas</a>
+            </li>
 
-        <li class="nav-item">
-            <a href="#Tecnologias" class="nav-link">Tecnologias</a>
-        </li>
+            <li class="nav-item">
+              <a href="#Tecnologias" class="nav-link">Tecnologias</a>
+            </li>
 
-        <li class="nav-item">
-            <a href="#competencias" class="nav-link">Competências</a>
-        </li>
+            <li class="nav-item">
+              <a href="#competencias" class="nav-link">Competências</a>
+            </li>
 
-        <li class="nav-item">
-            <a href="#analise" class="nav-link">Análise</a>
-        </li>
+            <li class="nav-item">
+              <a href="#analise" class="nav-link">Análise</a>
+            </li>
 
-    </ul>
+          </ul>
 
-    </div>
-</nav>
-</header>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  
+        </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero-section bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h1 class="display-4 text-success">Panorama do Mercado Tech
+            </h1>
+            <p class="lead">Uma análise acadêmica das demandas tecnológicas para desenvolvimento de software, comparando
+              o cenário de Joinville/SC com vagas remotas de nível nacional.</p>
+            <div class="mt-4">
+              <p><strong>Autor:</strong> Nicholas Miranda Henrique<br>
+                <strong>Curso:</strong> Engenharia de Software - UNIVILLE
+              </p>
+              <a href="#pesquisa" class="btn btn-success">Ver Metodologia</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="pesquisa" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="text-success">Metodologia da Pesquisa</h2>
+          <p>Como os dados foram levantados e organizados</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Amostragem</h5>
+                <p class="card-text">A pesquisa exploratória analisou <strong>8 vagas</strong> reais coletadas na
+                  plataforma LinkedIn, direcionadas para perfis de entrada (Estágio e Júnior).</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Divisão dos Grupos</h5>
+                <p class="card-text">Os dados foram divididos em dois cenários para comparação:<br>• 4 vagas regionais
+                  (Joinville, Blumenau e Jaraguá do Sul).<br>• 4 vagas de abrangência nacional (100% remotas).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="vagas" class="section-padding bg-light">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="text-success">Vagas Analisadas</h2>
+          <p>Tabela comparativa das oportunidades mapeadas no LinkedIn</p>
+        </div>
+        <table class="table table-bordered bg-white">
+          <thead>
+            <tr>
+              <th>Cargo</th>
+              <th>Localidade</th>
+              <th>Nível</th>
+              <th>Linguagem Base</th>
+              <th>Banco de Dados</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Desenvolvedor(a) C#/.NET Jr</td>
+              <td>Joinville/SC</td>
+              <td>Júnior</td>
+              <td>C#</td>
+              <td>SQL Server</td>
+            </tr>
+            <tr>
+              <td>Estágio em Eng. de Software</td>
+              <td>Joinville/SC</td>
+              <td>Estágio</td>
+              <td>Java / C#</td>
+              <td>PostgreSQL</td>
+            </tr>
+            <tr>
+              <td>Analista Desenvolvedor C# Jr</td>
+              <td>Jaraguá do Sul/SC</td>
+              <td>Júnior</td>
+              <td>C#</td>
+              <td>SQL Server</td>
+            </tr>
+            <tr>
+              <td>Programador Java Júnior</td>
+              <td>Blumenau/SC</td>
+              <td>Júnior</td>
+              <td>Java</td>
+              <td>Oracle / SQL Server</td>
+            </tr>
+            <tr>
+              <td>Desenvolvedor Back-end C#</td>
+              <td>Remoto (Brasil)</td>
+              <td>Júnior</td>
+              <td>C#</td>
+              <td>SQL Server</td>
+            </tr>
+            <tr>
+              <td>Desenvolvedor Java Remoto Jr</td>
+              <td>Remoto (Brasil)</td>
+              <td>Júnior</td>
+              <td>Java</td>
+              <td>PostgreSQL</td>
+            </tr>
+            <tr>
+              <td>Dev Full Stack / Back-end</td>
+              <td>Remoto (Brasil)</td>
+              <td>Júnior</td>
+              <td>C# / TypeScript</td>
+              <td>MySQL / SQL Server</td>
+            </tr>
+            <tr>
+              <td>Estágio em Desenvolvimento Back-end</td>
+              <td>Remoto (Brasil)</td>
+              <td>Estágio</td>
+              <td>C# / Python</td>
+              <td>PostgreSQL</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="Tecnologias" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="text-success">Tecnologias e Competências</h2>
+          <p id="competencias">Principais requisitos exigidos pelo mercado</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <div class="card-header bg-success text-white">Linguagens</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">C# (.NET) - 75%</li>
+                <li class="list-group-item">Java - 37,5%</li>
+                <li class="list-group-item">Python - 12,5%</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <div class="card-header bg-success text-white">Bancos de Dados</div>
+              <div class="card-body">
+                <p>O <strong>Microsoft SQL Server</strong> liderou com 5 citações, sendo o pilar de muitas aplicações
+                  corporativas, seguido pelo <strong>PostgreSQL</strong> com 3 citações.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <div class="card-header bg-success text-white">Infraestrutura</div>
+              <div class="card-body">
+                <p><strong>Git/GitHub:</strong> Exigência absoluta, presente em 100% dos anúncios.</p>
+                <p><strong>Docker & Cloud:</strong> Aparecem em 75% das vagas remotas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="analise" class="section-padding bg-light">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="text-success">Análise do Mercado</h2>
+          <p>Conclusões finais do trabalho</p>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <div class="card">
+              <div class="card-header">Mercado Local (Joinville e SC)</div>
+              <div class="card-body">
+                <p>Reflete o perfil industrial e logístico da região, sustentando uma forte hegemonia do <strong>.NET
+                    (C#)</strong> e <strong>Java</strong>. O foco para iniciantes está nos fundamentos: orientação a
+                  objetos, lógica e controle de versão.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 mb-3">
+            <div class="card">
+              <div class="card-header">Mercado Nacional (Remoto)</div>
+              <div class="card-body">
+                <p>Elimina barreiras geográficas, mas eleva a barra de entrada. Além de linguagens de back-end, as vagas
+                  exigem maturidade técnica precoce com práticas de <strong>DevOps (Docker, CI/CD)</strong> e nuvem.
+                  Exige forte autonomia do candidato.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 mb-3">
+            <div class="card">
+              <div class="card-header">Stack de Interesse e Planejamento</div>
+              <div class="card-body">
+                <p>O objetivo traçado pelo estudo é consolidar a stack <strong>C# (.NET MAUI, Blazor)</strong> integrada
+                  com <strong>bancos espaciais (PostGIS)</strong> e ferramentas GIS. A estratégia inclui melhorar a
+                  documentação de repositórios no GitHub e focar em infraestrutura e testes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="container mt-5 mb-3">
+    <hr>
+    <p class="text-center mt-3">Nicholas Miranda Henrique - Univille</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
